@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="243dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="68dp"
         android:src="@drawable/java"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,281 +18,413 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="376dp"
+        android:layout_marginTop="84dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-        <Button
-            android:layout_width="5dp"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/q"
+            android:layout_width="3dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Q"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#56A2E4"
+
+            android:text="Q" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/vv"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#56A2E4"
+            android:text="w"
 
             />
-        <Button
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/e"
             android:layout_width="5dp"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            android:layout_marginHorizontal="3dp"
-            android:text="Q"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#56A2E4"
+            android:text="e"
 
             />
-        <Button
-            android:layout_width="5dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="1dp"
-            android:layout_marginHorizontal="3dp"
-            android:text="Q"
 
-            />
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/r"
             android:layout_width="5dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="3dp"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginEnd="0dp"
-            android:text="Q"
-
+            android:layout_weight="1"
+            android:text="r"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#56A2E4"
             />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/t"
             android:layout_width="5dp"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:text="t"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#56A2E4"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/why"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:text="y"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#56A2E4"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/u"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="3dp"
             android:layout_weight="1"
-            android:text="Q"
-
+            android:text="u"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#56A2E4"
             />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/i"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
             android:layout_weight="1"
-            android:text="Q"
-
+            android:text="i"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#56A2E4"
             />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_weight="1"
-            android:text="Q"
-
-            />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="0dp"
-            android:layout_weight="1"
-            android:text="Q"
-
-            />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="3dp"
-            android:text="Q"
-
-            />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
+        android:layout_width="404dp"
+        android:layout_height="61dp"
         android:orientation="horizontal"
+        android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
 
-        <Button
-            android:layout_width="5dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Q"
-
-            />
-
-        <Button
-            android:layout_width="5dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:layout_weight="1"
-            android:text="Q"
-
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/o"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginStart="2dp"
             android:layout_weight="1"
-            android:text="Q"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#e45672"
+            android:text="o" />
 
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/p"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
-            android:text="Q"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#e45672"
+            android:text="p" />
 
-            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#e45672"
+            android:text="a" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/s"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="0dp"
             android:layout_weight="1"
-            android:text="Q"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#e45672"
+            android:text="s" />
 
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/d"
             android:layout_width="0dp"
-            android:layout_marginHorizontal="5dp"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
-            android:text="Q"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#e45672"
+            android:text="d" />
 
-            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/f"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#e45672"
+
+            android:text="f" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/g"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#e45672"
+
+            android:text="g" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
+        android:layout_width="397dp"
+        android:layout_height="58dp"
         android:orientation="horizontal"
+        android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints">
 
-        <Button
-            android:layout_width="5dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Q"
-
-            />
-
-        <Button
-            android:layout_width="5dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:layout_weight="1"
-            android:text="Q"
-
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/h"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
             android:layout_weight="1"
-            android:text="Q"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#4E38AF"
+            android:text="h" />
 
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/j"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
+            android:layout_marginEnd="7dp"
             android:layout_weight="1"
-            android:text="Q"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#4E38AF"
+            android:text="j" />
 
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/k"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
             android:layout_weight="1"
-            android:text="Q"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#4E38AF"
+            android:text="k" />
 
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/l"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
-            android:text="Q"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#4E38AF"
+            android:text="l" />
 
-            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/z"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#4E38AF"
+            android:text="z" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/x"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            app:strokeWidth="2dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#4E38AF"
+            android:text="x" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
         android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
 
-        <Button
-            android:layout_width="5dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Q"
-
-            />
-
-        <Button
-            android:layout_width="5dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:layout_weight="1"
-            android:text="Q"
-
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/c"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Q"
+            android:text="c"
+            app:strokeColor="#67D523"
+            app:strokeWidth="2dp" />
 
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/v"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
-            android:text="Q"
+            android:text="v"
+            app:strokeColor="#67D523"
+            app:strokeWidth="2dp" />
 
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/b"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="0dp"
             android:layout_weight="1"
-            android:text="Q"
+            android:text="b"
+            app:strokeColor="#67D523"
+            app:strokeWidth="2dp" />
 
-            />
-
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/n"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
-            android:text="Q"
-            />
+            android:text="n"
+            app:strokeColor="#67D523"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/m"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="m"
+            app:strokeColor="#67D523"
+            app:strokeWidth="2dp" />
     </LinearLayout>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backspace"
+        android:layout_width="171dp"
+        android:layout_height="47dp"
+        android:text="BackSpace"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeWidth="2.5dp"
+        app:strokeColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="185dp"
+        android:layout_height="53dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ItemName"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="UserName:"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
