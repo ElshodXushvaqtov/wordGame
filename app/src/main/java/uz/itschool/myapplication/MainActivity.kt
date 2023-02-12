@@ -9,12 +9,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-var message=username.text.toString()
+val message=username.text.toString()
         next.setOnClickListener {
-            var intent=Intent(this,GameActivity::class.java).also {
-                it.putExtra("UserName",message)
-            startActivity(it)
-            }
+            val intent=Intent(this,GameActivity::class.java)
+               intent.putExtra("UserName",message)
+            startActivity(intent)
         }
 
     }
