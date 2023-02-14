@@ -16,7 +16,7 @@
         android:layout_width="350dp"
         android:layout_height="57dp"
         android:layout_marginBottom="20dp"
-        android:hint="Username"
+        android:hint="Username*"
         app:boxCornerRadiusBottomEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusTopEnd="10dp"
@@ -169,6 +169,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.963"
         app:srcCompat="@drawable/ellipse" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/records"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="#00FF49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="Records"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

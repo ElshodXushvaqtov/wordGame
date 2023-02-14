@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,11 +16,15 @@ class MainActivity : AppCompatActivity() {
 
 
         next.setOnClickListener {
-            val message = username.text.toString()
-            Log.d("BBB", "onCreate: $message")
-            val intent=Intent(this,GameActivity::class.java)
-               intent.putExtra("UserName",message)
-            startActivity(intent)
+            if(username.text.toString()!="") {
+                val message = username.text.toString()
+                val intent = Intent(this, GameActivity::class.java)
+                intent.putExtra("UserName", message)
+                startActivity(intent)
+            }
+            else{
+                Toast.makeText(applicationContext,"Ismingizni kiriting",Toast.LENGTH_SHORT+1000).show()
+            }
         }
 
     }

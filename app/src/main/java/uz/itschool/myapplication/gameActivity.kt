@@ -66,9 +66,7 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
             if (index < images.size) {
                 item.setImageResource(images[index++].itemValue)
                 itemname.text = ""
-
             } else {
-                var score= counter.toString()
                 var intent=Intent(this,endGame::class.java)
                 intent.putExtra("Score", counter)
                 startActivity(intent)
