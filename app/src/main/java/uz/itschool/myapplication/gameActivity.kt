@@ -1,10 +1,15 @@
 package uz.itschool.myapplication
 
 import android.annotation.SuppressLint
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 
@@ -17,6 +22,7 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
         val message = intent.getStringExtra("UserName")
+        Log.d("AAA", "onCreate: $message")
         user.text = message
         images.add(itemclass(R.drawable.kotlin, "kotlin"))
         images.add(itemclass(R.drawable.java, "java"))
@@ -53,16 +59,23 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
         backspace.setOnClickListener {
             itemname.text = itemname.text.dropLast(1)
         }
+        item.setImageResource(images[index].itemValue)
+        index++
         apply.setOnClickListener {
-            checkword(images[index])
+           if( checkword(images[index-1])){
             if (index < images.size) {
                 item.setImageResource(images[index++].itemValue)
                 itemname.text = ""
 
             } else {
-                index = 0
-                item.setImageResource(images[index++].itemValue)
-                itemname.text = ""
+                var score= counter.toString()
+                var intent=Intent(this,endGame::class.java)
+                intent.putExtra("Score", counter)
+                startActivity(intent)
+            }
+           }
+            else{
+                Toast.makeText(applicationContext,"Incorrect word",Toast.LENGTH_SHORT).show()
             }
 
 
@@ -77,11 +90,13 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    fun checkword(itemclass: itemclass) {
+    fun checkword(itemclass: itemclass):Boolean {
         if (itemname.text == itemclass.itemname) {
             counter++
             count.text = counter.toString()
+            return true
         }
+        return false
     }
 
 }

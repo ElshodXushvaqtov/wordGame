@@ -11,7 +11,6 @@
         android:layout_width="243dp"
         android:layout_height="199dp"
         android:layout_marginTop="68dp"
-        android:src="@drawable/java"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -377,7 +376,7 @@
         android:text="BackSpace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintHorizontal_bias="0.258"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
         app:layout_constraintVertical_bias="0.082"
@@ -389,16 +388,17 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="106dp"
         android:text="apply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.177"
         app:layout_constraintStart_toEndOf="@+id/backspace"
         app:strokeColor="#FFC800"
         app:strokeWidth="2.5dp" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="185dp"
         android:layout_height="53dp"
         app:cardCornerRadius="10dp"
@@ -412,8 +412,8 @@
             android:id="@+id/itemname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
             android:layout_gravity="center"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="25sp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout" />
@@ -423,25 +423,24 @@
         android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Hello"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="16.5dp"
         android:text="0"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toEndOf="@+id/user"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
