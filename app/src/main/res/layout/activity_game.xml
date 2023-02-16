@@ -420,27 +420,27 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/user"
+        android:id="@+id/player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Hello"
+        android:text="Playername:"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/count"
+        android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16.5dp"
-        android:text="0"
+        android:text=""
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/user"
+        app:layout_constraintStart_toEndOf="@+id/player"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

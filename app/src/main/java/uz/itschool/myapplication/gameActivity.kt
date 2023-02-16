@@ -1,12 +1,10 @@
 package uz.itschool.myapplication
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
@@ -22,7 +20,6 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
         val message = intent.getStringExtra("UserName")
-        Log.d("AAA", "onCreate: $message")
         user.text = message
         images.add(itemclass(R.drawable.kotlin, "kotlin"))
         images.add(itemclass(R.drawable.java, "java"))
@@ -62,18 +59,26 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
         item.setImageResource(images[index].itemValue)
         index++
         apply.setOnClickListener {
-           if( checkword(images[index-1])){
-            if (index < images.size) {
-                item.setImageResource(images[index++].itemValue)
-                itemname.text = ""
+            if (itemname.text != "") {
+                if (images[index - 1].itemname == itemname.text) {
+                    counter++
+                }
+                if (index < images.size) {
+
+                    item.setImageResource(images[index++].itemValue)
+
+                    itemname.text = ""
+
+                } else {
+                    val intent = Intent(this, endGame::class.java)
+                    intent.putExtra("Score", counter.toString())
+                    intent.putExtra("player",user.text)
+                    startActivity(intent)
+                    finish()
+                }
             } else {
-                var intent=Intent(this,endGame::class.java)
-                intent.putExtra("Score", counter)
-                startActivity(intent)
-            }
-           }
-            else{
-                Toast.makeText(applicationContext,"Incorrect word",Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Iltimos so'z kiriting", Toast.LENGTH_SHORT)
+                    .show()
             }
 
 
@@ -88,13 +93,5 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    fun checkword(itemclass: itemclass):Boolean {
-        if (itemname.text == itemclass.itemname) {
-            counter++
-            count.text = counter.toString()
-            return true
-        }
-        return false
-    }
 
 }
