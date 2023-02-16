@@ -194,13 +194,13 @@
 
     <androidx.cardview.widget.CardView
         app:cardCornerRadius="20dp"
-        app:cardElevation="40dp"
+        app:cardElevation="35dp"
         android:background="@color/white"
         android:id="@+id/recordslist"
         android:layout_width="322dp"
         android:layout_height="561dp"
         android:orientation="horizontal"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
